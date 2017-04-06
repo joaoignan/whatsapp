@@ -1,0 +1,26 @@
+<ion-view title="Create">  
+    <ion-content>
+        <form ng-submit="salvar(usuario)" class="padding">
+        <!--ng-submit utiliza os ng-models como dados pela action submit do form-->
+            <ion-list>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Nome</span>
+                    <input ng-model="usuario.name" type="text" placeholder="Nome"/>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Email</span>
+                    <input ng-model="usuario.email" type="text" placeholder="Email"/>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Senha</span>
+                    <input ng-model="usuario.senha" type="text" placeholder="Senha"/>
+                </label>
+                
+                <button type="submit" class="button button-balanced button-block">Salvar</button>
+
+            </ion-list>
+           
+        </form>
+    </ion-content>
+</ion-view>

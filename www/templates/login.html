@@ -1,0 +1,26 @@
+<ion-view title="Login">
+
+<ion-content>
+
+<form ng-submit="login(usuario)" class="padding" name:"formLogin">
+        <!--ng-submit utiliza os ng-models como dados pela action submit do form-->
+            <ion-list>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Email</span>
+                    <input ng-model="usuario.email" type="text" placeholder="Email" required/>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Senha</span>
+                    <input ng-model="usuario.password" type="text" placeholder="Senha" required/>
+                </label>
+                
+                <button type="submit" ng-disabled="formLogin.$invalid" class="button button-balanced button-block">Salvar</button>
+
+            </ion-list>
+           
+        </form>
+
+</ion-content>
+
+</ion-view>
